@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Black Leather Bag",
+    "price": 23.3,
+    "image": "img/undraw_shopping_app_flsj.svg",
+    "category": "bags"
+  },
+  {
+    "id": 2,
+    "name": "Stylish Watch",
+    "price": 59.99,
+    "image": "img/undraw_watch_application_uhc9.svg",
+    "category": "watches"
+  },
+  {
+    "id": 3,
+    "name": "Smart Watch",
+    "price": 99.99,
+    "image": "img/undraw_smartwatch_74tv.svg",
+    "category": "watches"
+  }
+]

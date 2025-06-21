@@ -420,3 +420,129 @@ footer p{
     font-size: 1rem;
     letter-spacing: 0.5px;
 }
+
+/* ========= RESPONSIVE STYLES ========= */
+@media (max-width: 1100px) {
+  .logo {
+    position: static;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.5rem; 
+  }
+
+  .searchArea {
+    position: static;
+    margin: 20px auto;
+    width: 250px; 
+  }
+
+  .section1 {
+    position: static;
+    text-align: center;
+    transform: none;
+    margin-top: 40px;
+  }
+
+  .section1 img {
+    height: 280px; 
+    max-width: 95%;
+    width: auto;
+  }
+
+  .section1But {
+    position: static;
+    text-align: center;
+    transform: none;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+
+  .section1But h1,
+  .section1But h2 {
+    font-size: 3rem; 
+    line-height: 1.3;
+    letter-spacing: 6px;
+  }
+
+  .btn {
+    margin: 30px auto;
+    width: 180px; 
+    height: 50px; 
+    font-size: 1.2rem;
+  }
+
+  .iconArea {
+    position: static;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .iconArea a {
+    padding: 15px; 
+    font-size: 1.8rem; 
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productBox {
+    margin: 20px 0;
+    width: 95%; 
+    max-width: 450px; 
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .aboutBox {
+    width: 95%;
+  }
+
+  .Notification p {
+    font-size: 1.2rem; 
+    width: 95%;
+  }
+
+  .notificationBox {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .subscribeBtn {
+    width: 100%;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .section1But h1,
+  .section1But h2 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+}
