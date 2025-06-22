@@ -985,8 +985,12 @@ text-align: center;
     display: none;
   }
 
-  .mobile-search-toggle {
+   .search-header .searchbox {
     display: none;
+  }
+
+  .mobile-search-toggle .searchbox {
+    display: flex;
   }
 }
 
