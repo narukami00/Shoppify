@@ -20,7 +20,9 @@ function loadCart() {
     const itemEl = document.createElement("div");
     itemEl.className = "cart-item";
     itemEl.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
+      <a href="product.html?id=${item.id}" class="cart-image-link">
+        <img src="${item.image}" alt="${item.name}" />
+      </a>
       <div class="cart-info">
         <h4>${item.name}</h4>
         <p>$${item.price.toFixed(2)}</p>
@@ -39,28 +41,15 @@ function loadCart() {
 
   cartTotal.textContent = `Total: $${total.toFixed(2)}`;
 
-  // remove buttons
-  document.querySelectorAll(".remove-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const index = button.getAttribute("data-index");
-      removeFromCart(index);
-    });
+  // Attach events
+  document.querySelectorAll(".remove-btn").forEach(btn => {
+    btn.addEventListener("click", () => removeFromCart(btn.dataset.index));
   });
-
-  // decrease buttons
-  document.querySelectorAll(".decrease-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const index = button.getAttribute("data-index");
-      changeQuantity(index, -1);
-    });
+  document.querySelectorAll(".decrease-btn").forEach(btn => {
+    btn.addEventListener("click", () => changeQuantity(btn.dataset.index, -1));
   });
-
-  // increase buttons
-  document.querySelectorAll(".increase-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const index = button.getAttribute("data-index");
-      changeQuantity(index, 1);
-    });
+  document.querySelectorAll(".increase-btn").forEach(btn => {
+    btn.addEventListener("click", () => changeQuantity(btn.dataset.index, 1));
   });
 }
 
@@ -69,20 +58,17 @@ function removeFromCart(index) {
   cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
   loadCart();
+  updateHeaderCounts();
 }
 
 function changeQuantity(index, delta) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   if (!cart[index]) return;
-
   cart[index].quantity += delta;
-
-  if (cart[index].quantity < 1) {
-    cart.splice(index, 1);
-  }
-
+  if (cart[index].quantity < 1) cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
   loadCart();
+  updateHeaderCounts();
 }
 
 document.addEventListener("DOMContentLoaded", loadCart);

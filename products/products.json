@@ -1,23 +1,146 @@
 [
   {
     "id": 1,
-    "name": "Black Leather Bag",
+    "name": "Classic Black Leather Bag",
     "price": 23.3,
-    "image": "img/undraw_shopping_app_flsj.svg",
-    "category": "bags"
+    "image": "img/bag1.jpg",
+    "category": "bags",
+    "rating": 4,
+    "description": "A timeless black leather bag with sleek minimal design and high durability.",
+    "colors": ["Black", "Brown", "Tan"],
+    "stock": 12,
+    "shipping": "Free shipping over $50"
   },
   {
     "id": 2,
-    "name": "Stylish Watch",
+    "name": "Urban Explorer Watch",
     "price": 59.99,
-    "image": "img/undraw_watch_application_uhc9.svg",
-    "category": "watches"
+    "image": "img/watch7.webp",
+    "category": "watches",
+    "rating": 4,
+    "description": "A rugged yet elegant watch perfect for daily urban adventures.",
+    "colors": ["Black", "Silver"],
+    "stock": 8,
+    "shipping": "Free shipping over $50"
   },
   {
     "id": 3,
-    "name": "Smart Watch",
+    "name": "NextGen Smart Watch",
     "price": 99.99,
-    "image": "img/undraw_smartwatch_74tv.svg",
-    "category": "watches"
+    "image": "img/watch6.webp",
+    "category": "watches",
+    "rating": 5,
+    "description": "A feature-packed smart watch with health tracking, GPS, and notifications.",
+    "colors": ["Black", "Rose Gold", "White"],
+    "stock": 5,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 4,
+    "name": "Chrono Edge",
+    "price": 89.99,
+    "image": "img/watch5.jpg",
+    "category": "watches",
+    "rating": 4,
+    "description": "Bold design and precise timekeeping make this a perfect blend of style and function.",
+    "colors": ["Blue", "Black"],
+    "stock": 7,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 5,
+    "name": "SleekFit Pro",
+    "price": 109.99,
+    "image": "img/watch4.png",
+    "category": "watches",
+    "rating": 5,
+    "description": "Modern smart watch with AMOLED display and 2-day battery life.",
+    "colors": ["Black", "Gray"],
+    "stock": 4,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 6,
+    "name": "Midnight Sport",
+    "price": 74.99,
+    "image": "img/watch3.jpg",
+    "category": "watches",
+    "rating": 3,
+    "description": "A lightweight and sporty watch designed for active lifestyles.",
+    "colors": ["Black", "Red"],
+    "stock": 10,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 7,
+    "name": "Vintage Timekeeper",
+    "price": 49.99,
+    "image": "img/watch2.jpg",
+    "category": "watches",
+    "rating": 4,
+    "description": "Retro-style analog watch with a leather strap and brass finish.",
+    "colors": ["Brown", "Tan"],
+    "stock": 6,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 8,
+    "name": "Digital Pulse Watch",
+    "price": 64.99,
+    "image": "img/watch1.jpg",
+    "category": "watches",
+    "rating": 5,
+    "description": "Water-resistant digital watch with pulse monitoring and stopwatch.",
+    "colors": ["Black", "White"],
+    "stock": 9,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 9,
+    "name": "Tan Leather Messenger",
+    "price": 26.5,
+    "image": "img/bag3.jpg",
+    "category": "bags",
+    "rating": 5,
+    "description": "Stylish tan leather bag ideal for casual and business use.",
+    "colors": ["Tan", "Dark Brown"],
+    "stock": 11,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 10,
+    "name": "Minimalist Canvas Tote",
+    "price": 18.99,
+    "image": "img/bag2.jpg",
+    "category": "bags",
+    "rating": 4,
+    "description": "Lightweight canvas tote with minimalist aesthetics and great storage.",
+    "colors": ["Beige", "Black"],
+    "stock": 15,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 11,
+    "name": "Bold Red Carry-All",
+    "price": 29.99,
+    "image": "img/bag4.jpg",
+    "category": "bags",
+    "rating": 3,
+    "description": "Eye-catching red carry-all bag with roomy interior and secure zip.",
+    "colors": ["Red", "Black"],
+    "stock": 5,
+    "shipping": "Free shipping over $50"
+  },
+  {
+    "id": 12,
+    "name": "Professional Laptop Bag",
+    "price": 34.99,
+    "image": "img/bag5.jpg",
+    "category": "bags",
+    "rating": 5,
+    "description": "Sleek, professional bag with padded laptop compartment and organizer slots.",
+    "colors": ["Black", "Gray"],
+    "stock": 7,
+    "shipping": "Free shipping over $50"
   }
 ]

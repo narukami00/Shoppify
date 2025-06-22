@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wishlist – Shoppify</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Hide empty-msg until JS shows it */
+    .empty-msg { display: none; text-align: center; margin-top: 30px; color: #777; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-btn">← Back to Home</button>
+    <div class="wishlist-container">
+      <h1>My Wishlist</h1>
+      <div id="wishlist-items" class="wishlist-items"></div>
+      <p id="empty-msg" class="empty-msg">You have no items in your wishlist.</p>
+    </div>
+  </div>
+
+  <!-- Load your script LAST so elements exist -->
+  <script src="wishlist.js"></script>
+</body>
+</html>
