@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0c2a;
+  overflow-x: hidden;
+}
+
+
+
+/* Base Section Styling */
+.summer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+  background: linear-gradient(to right, #0b0c2a, #161842);
+  color: #f0f0f0;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 20px;
+}
+
+
+.summer-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(90deg, #6b60ec, #00cfff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.summer-title:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 20px rgba(109, 132, 255, 0.5);
+}
+
+.summer-title .highlight {
+  background: linear-gradient(90deg, #ff4d4d, #ffb347);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-shadow 0.3s ease;
+}
+
+.summer-title:hover .highlight {
+  text-shadow: 0 0 12px rgba(255, 100, 100, 0.8);
+}
+
+
+.summer-section p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Product Grid */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+/* Product Card */
+.productBox {
+  background-color: #1e1f3a;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.productBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Image */
+.productBox img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.productBox:hover img {
+  transform: scale(1.05);
+}
+
+/* Discount Label */
+.discount-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff3b3b;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+/* Text & Pricing */
+.productBox p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999 !important;
+  font-size: 14px;
+}
+
+.discounted-price {
+  color: #ff4d4d !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Buy Button */
+.buyBtn {
+  margin-top: 15px;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+  background: linear-gradient(120deg, #6b60ec, #a166f4);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: glow 1.5s infinite alternate;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.productBox:hover .buyBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px #6b60ec;
+  }
+  100% {
+    box-shadow: 0 0 16px #a166f4;
+  }
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #292b4a;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #393b5c;
+  color: #00cfff;
+  border-color: #00cfff;
+}
+
+
+.filter-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.filter-bar select {
+  padding: 6px 12px;
+  background-color: #1e1f3a;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.filter-bar select:focus {
+  border-color: #00cfff;
+}
