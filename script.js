@@ -127,15 +127,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Search Box
-document.querySelector('.searchbox').addEventListener('keydown', function (e) {
-  if (e.key === 'Enter') {
-    const query = e.target.value.trim();
-    if (query) {
-      localStorage.setItem('searchQuery', query); // Send query to next page
-      window.location.href = 'search.html';
+// Listen for Enter key on both desktop and mobile search inputs
+document.querySelectorAll('.searchbox input[type="search"]').forEach(input => {
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      const query = e.target.value.trim();
+      if (query) {
+        localStorage.setItem('searchQuery', query);
+        window.location.href = 'search.html';
+      }
     }
-  }
+  });
 });
+
 
 // Summer Collection
 document.addEventListener("DOMContentLoaded", () => {
