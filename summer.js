@@ -1,5 +1,6 @@
-let summerProducts = []; // Global
+let summerProducts = []; // Making products global
 
+// When page DOM is ready, load the products with 'clothing' catagory to Summer Products
 window.addEventListener("DOMContentLoaded", () => {
   fetch("products/products.json")
     .then(res => res.json())
@@ -15,6 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Rendering the summer products
 function renderSummerProducts(list) {
   const container = document.getElementById("summer-list");
   container.innerHTML = "";
@@ -35,12 +37,14 @@ function renderSummerProducts(list) {
       `}
     `;
 
+    // Event listener to go to product page when clicked
     productBox.querySelectorAll(".product-link").forEach(el => {
       el.addEventListener("click", () => {
         window.location.href = `product.html?id=${product.id}`;
       });
     });
 
+    // Event listener for add to cart
     const btn = document.createElement("a");
     btn.href = "#";
     btn.className = "buyBtn";
@@ -55,6 +59,7 @@ function renderSummerProducts(list) {
   });
 }
 
+// Filter by price (low to high, high to low)
 document.getElementById("price-filter").addEventListener("change", function () {
   const sortOption = this.value;
   let sorted = [...summerProducts];
@@ -67,8 +72,6 @@ document.getElementById("price-filter").addEventListener("change", function () {
 
   renderSummerProducts(sorted);
 });
-
-// Your existing addToCart function stays unchanged
 
 
 // Add to Cart function

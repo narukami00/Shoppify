@@ -713,7 +713,8 @@ footer p{
   border-radius: 4px;
 }
 
-/* Wishlist Button */
+/*--------------------------------------------------- W I S H L I S T -----------------------------------------------------*/
+
 .wishlist-btn {
   background: #fff;
   color: #c45500;
@@ -760,6 +761,7 @@ footer p{
 .wishlist-card:hover {
   transform: translateY(-5px);
 }
+
 .card-image img {
   width: 100%;
   height: 150px;
@@ -813,78 +815,6 @@ footer p{
 .header-icons {
   display: flex;
   gap: 20px;
-}
-
-.cart-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.cart-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-right: 20px;
-}
-.cart-info {
-    flex-grow: 1;
-}
-.cart-info h4 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-.cart-info p {
-    margin: 5px 0;
-}
-.cart-total {
-    text-align: right;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 30px;
-}
-.remove-btn {
-background: transparent;
-border: none;
-font-size: 1.2rem;
-cursor: pointer;
-color: red;
-margin-left: 10px;
-}
-.quantity-controls {
-display: flex;
-align-items: center;
-gap: 8px;
-margin-top: 5px;
-}
-
-.quantity-controls button {
-background-color: #692ca1;
-border: none;
-color: white;
-font-weight: bold;
-cursor: pointer;
-padding: 4px 4px;
-padding-top: 0.5px;
-border-radius: 50%;
-user-select: none;
-font-size: 1rem;
-}
-
-.quantity-controls span.quantity {
-font-weight: 600;
-min-width: 20px;
-text-align: center;
 }
 
 

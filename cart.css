@@ -1,0 +1,154 @@
+/* CART*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.back-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #4a007e;
+}
+
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #4a007e;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.1);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s;
+}
+
+.cart-image-link:hover img {
+  transform: scale(1.05);
+}
+
+.cart-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quantity-controls button {
+  background-color: #6a0dad;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+
+.quantity-controls button:hover {
+  background-color: #3faee2;
+}
+
+.quantity-controls span.quantity {
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cart-item > div:last-of-type {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ff4d4f;
+  transition: color 0.3s ease;
+  margin-left: 15px;
+}
+
+.remove-btn:hover {
+  color: #d32f2f;
+}
+
+.cart-total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #4a007e;
+  margin-top: 30px;
+}
+
+.wrapper {
+  padding: 20px;
+}

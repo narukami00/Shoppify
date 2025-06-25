@@ -1,5 +1,8 @@
+// Query the local storage for search
 const searchQuery = localStorage.getItem('searchQuery');
 
+// If text matches with anything present on Name, Description or Keywords with an error threshold of 40%
+// Store them in results
 fetch('products/products.json')
   .then(res => res.json())
   .then(products => {
@@ -11,11 +14,13 @@ fetch('products/products.json')
     const results = fuse.search(searchQuery).map(r => r.item);
     const resultContainer = document.getElementById('results');
 
+    // If no match found
     if (results.length === 0) {
       resultContainer.innerHTML = '<p>No results found.</p>';
       return;
     }
 
+    // If found then just display them
     results.forEach(product => {
       const productBox = document.createElement("div");
       productBox.className = "productBox";
